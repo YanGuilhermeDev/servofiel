@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Servo Fiel — O método que vai destravar sua comunicação e te dar direção clara no ministério. Para pregadores e servos de Deus.">
+  <meta name="theme-color" content="#141E30">
+  <meta name="color-scheme" content="dark">
+  <title>Servo Fiel | Destravar Sua Pregação e Dar o Próximo Passo no Ministério</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,500&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1528586015400262');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1528586015400262&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <!-- UTMify Pixel Code -->
+  <script>
+    window.pixelId = "6a3992d4f442634ee5b28fa0";
+    var a = document.createElement("script");
+    a.setAttribute("async", "");
+    a.setAttribute("defer", "");
+    a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+    document.head.appendChild(a);
+  </script>
+  <!-- End UTMify Pixel Code -->
+
+</head>
+<body>
+  <!-- Particle Canvas Background -->
+  <canvas id="particleCanvas" aria-hidden="true"></canvas>
+
+  <!-- Grid Pattern Overlay -->
+  <div class="grid-pattern" aria-hidden="true"></div>
+
+  <div class="app">
+    <!-- Decorative Glow Orbs -->
+    <div class="glow-orb glow-orb--1" aria-hidden="true"></div>
+    <div class="glow-orb glow-orb--2" aria-hidden="true"></div>
+    <div class="glow-orb glow-orb--3" aria-hidden="true"></div>
+
+    <div class="bg-glow bg-glow--top" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow--bottom" aria-hidden="true"></div>
+
+    <header class="header">
+      <div class="header__inner header__inner--lp">
+        <div class="logo">
+          <span class="logo__icon"><i data-lucide="sparkles"></i></span>
+          <span class="logo__text">Servo Fiel</span>
+        </div>
+        <a href="https://go.frendz.com.br/3hyc4zidd3" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm header__cta">
+          Saiba mais
+          <i data-lucide="arrow-right"></i>
+        </a>
+      </div>
+    </header>
+
+    <main class="main">
+
+      <!-- HERO — VSL + Headline -->
+      <section class="hero" id="home" aria-label="Seção principal">
+        <div class="container container--wide">
+
+          <div class="hero__content">
+            <span class="badge badge--hero" id="hero-badge">
+              <i data-lucide="award"></i>
+              Formação completa para pregadores e servos de Deus
+            </span>
+
+            <h1 class="hero__title">
+              Destravar Sua Pregação e Dar o Próximo Passo no Ministério
+            </h1>
+
+            <p class="hero__sub">
+              Para pregadores que querem transmitir a Palavra com mais impacto, e para servos de Deus que querem dar o próximo passo no chamado — com método, direção e suporte real.
+            </p>
+
+            <div class="hero__stats">
+              <div class="stat-pill"><i data-lucide="video"></i> 5 módulos</div>
+              <div class="stat-pill"><i data-lucide="infinity"></i> Acesso vitalício</div>
+              <div class="stat-pill"><i data-lucide="users"></i> Comunidade exclusiva</div>
+            </div>
+          </div>
+
+          <!-- VSL Player -->
+          <div class="vsl-wrapper" id="vsl-player" aria-label="Vídeo de apresentação do método">
+            <div class="vsl-inner">
+              <div class="vsl-ratio">
+                <div class="vsl-placeholder" id="vslPlaceholder">
+                  <div class="vsl-placeholder__bg" aria-hidden="true"></div>
+                  <button class="vsl-play-btn" id="vslPlayBtn" aria-label="Assistir ao vídeo de apresentação">
+                    <span class="vsl-play-btn__ring" aria-hidden="true"></span>
+                    <span class="vsl-play-btn__icon" aria-hidden="true">
+                      <i data-lucide="play"></i>
+                    </span>
+                  </button>
+                  <div class="vsl-placeholder__text">
+                    <span class="vsl-label">Assista antes de decidir</span>
+                    <span class="vsl-duration"><i data-lucide="clock"></i> Apresentação em vídeo</span>
+                  </div>
+                </div>
+                <!-- Vídeo local MP4 -->
+                <video
+                  id="vslVideo"
+                  class="vsl-iframe hidden"
+                  src="video/VSL ajustada.mp4"
+                  controls
+                  playsinline
+                  preload="metadata"
+                  title="Vídeo de apresentação — Servo Fiel"
+                ></video>
+              </div>
+            </div>
+            <div class="vsl-cta-below">
+              <a href="https://go.frendz.com.br/3hyc4zidd3" target="_blank" rel="noopener noreferrer" class="btn btn--cta btn--lg" id="hero-cta-btn">
+                Quero Destravar Minha Pregação
+                <i data-lucide="arrow-right"></i>
+              </a>
+              <p class="vsl-cta-guarantee">
+                <i data-lucide="shield-check"></i>
+                Garantia incondicional de 15 dias
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="scroll-indicator" aria-hidden="true">
+          <span class="scroll-indicator__text">Rolar para ver mais</span>
+          <i data-lucide="chevron-down"></i>
+        </div>
+      </section>
+
+      <!-- SALES PAGE CONTENT -->
+      <div class="container container--wide">
+
+        <!-- Para quem é -->
+        <section class="sales-block scroll-reveal" aria-labelledby="audience-heading">
+          <div class="section-header">
+            <span class="section-label"><i data-lucide="users"></i> Público</span>
+            <h2 class="sales-block__title" id="audience-heading">Para quem é este método</h2>
+          </div>
+          <div class="audience-grid">
+            <article class="audience-card">
+              <div class="card-icon card-icon--gold">
+                <i data-lucide="mic"></i>
+              </div>
+              <h3>Pregadores</h3>
+              <ul>
+                <li><i data-lucide="check"></i> Têm a revelação, mas travam na entrega</li>
+                <li><i data-lucide="check"></i> Preparam o sermão, mas a mensagem não conecta</li>
+                <li><i data-lucide="check"></i> Sentem insegurança ao pregar</li>
+              </ul>
+            </article>
+            <article class="audience-card">
+              <div class="card-icon card-icon--gold">
+                <i data-lucide="hand-heart"></i>
+              </div>
+              <h3>Servos de Deus</h3>
+              <ul>
+                <li><i data-lucide="check"></i> Sentem que estão no automático</li>
+                <li><i data-lucide="check"></i> Querem crescer, mas não sabem por onde focar</li>
+                <li><i data-lucide="check"></i> Desejam pregar/ensinar, mas não sabem como começar</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <!-- Módulos -->
+        <section class="sales-block scroll-reveal" aria-labelledby="modules-heading">
+          <div class="section-header">
+            <span class="section-label"><i data-lucide="layers"></i> Conteúdo</span>
+            <h2 class="sales-block__title" id="modules-heading">O que você vai receber</h2>
+            <p class="sales-block__desc">Cada módulo foi pensado para resolver uma etapa real da sua jornada — sem deixar dúvidas sobre o que está incluso.</p>
+          </div>
+          <div class="modules-grid">
+            <article class="module-card">
+              <div class="module-card__top">
+                <span class="module-card__num">01</span>
+                <span class="module-card__icon"><i data-lucide="brain"></i></span>
+              </div>
+              <h3>Fundamentos</h3>
+              <p>Como organizar pensamento e revelação antes de pregar</p>
+              <span class="tag"><i data-lucide="play-circle"></i> Vídeo + PDF</span>
+            </article>
+            <article class="module-card">
+              <div class="module-card__top">
+                <span class="module-card__num">02</span>
+                <span class="module-card__icon"><i data-lucide="layout-template"></i></span>
+              </div>
+              <h3>Estrutura que conecta</h3>
+              <p>Técnica de história, pausa e aplicação prática na pregação</p>
+              <span class="tag"><i data-lucide="pen-line"></i> Vídeo + exercícios</span>
+            </article>
+            <article class="module-card">
+              <div class="module-card__top">
+                <span class="module-card__num">03</span>
+                <span class="module-card__icon"><i data-lucide="radio"></i></span>
+              </div>
+              <h3>Comunicação e presença</h3>
+              <p>Como transparecer a Palavra com segurança no púlpito</p>
+              <span class="tag"><i data-lucide="mic-vocal"></i> Vídeo + prática guiada</span>
+            </article>
+            <article class="module-card">
+              <div class="module-card__top">
+                <span class="module-card__num">04</span>
+                <span class="module-card__icon"><i data-lucide="map"></i></span>
+              </div>
+              <h3>Direção e propósito</h3>
+              <p>Mapa de crescimento para servos de Deus</p>
+              <span class="tag"><i data-lucide="file-text"></i> Vídeo + PDF</span>
+            </article>
+            <article class="module-card">
+              <div class="module-card__top">
+                <span class="module-card__num">05</span>
+                <span class="module-card__icon"><i data-lucide="footprints"></i></span>
+              </div>
+              <h3>Do desejo à prática</h3>
+              <p>Primeiros passos para quem quer começar a pregar/ensinar</p>
+              <span class="tag"><i data-lucide="list-checks"></i> Vídeo + checklist</span>
+            </article>
+            <article class="module-card module-card--bonus">
+              <div class="module-card__top">
+                <span class="module-card__num">+</span>
+                <span class="module-card__icon"><i data-lucide="gift"></i></span>
+              </div>
+              <h3>Bônus exclusivos</h3>
+              <p>Comunidade de apoio + mentoria em grupo + materiais extras</p>
+              <span class="tag tag--gold"><i data-lucide="infinity"></i> Acesso vitalício</span>
+            </article>
+          </div>
+        </section>
+
+        <!-- Depoimentos -->
+        <section class="sales-block scroll-reveal" aria-labelledby="testimonials-heading">
+          <div class="section-header">
+            <span class="section-label"><i data-lucide="star"></i> Depoimentos</span>
+            <h2 class="sales-block__title" id="testimonials-heading">Quem já passou por isso e transformou</h2>
+          </div>
+          <div class="testimonials">
+            <div class="testimonial-group">
+              <h3 class="testimonial-group__label"><i data-lucide="mic"></i> Pregadores</h3>
+              <div class="testimonial-cards">
+                <blockquote class="testimonial-card">
+                  <div class="testimonial-card__header">
+                    <div class="avatar">RM</div>
+                    <div>
+                      <strong>Pastor Ricardo M.</strong>
+                      <span>São Paulo</span>
+                    </div>
+                    <div class="stars" aria-label="5 estrelas">
+                      <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+                    </div>
+                  </div>
+                  <i data-lucide="quote" class="quote-icon"></i>
+                  <p>"Depois do método, finalmente consegui transmitir a revelação que recebia na oração. Minhas pregações ganharam clareza e profundidade."</p>
+                </blockquote>
+                <blockquote class="testimonial-card">
+                  <div class="testimonial-card__header">
+                    <div class="avatar">AL</div>
+                    <div>
+                      <strong>Pregadora Ana L.</strong>
+                      <span>Minas Gerais</span>
+                    </div>
+                    <div class="stars" aria-label="5 estrelas">
+                      <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+                    </div>
+                  </div>
+                  <i data-lucide="quote" class="quote-icon"></i>
+                  <p>"A estrutura emocional da pregação mudou tudo. As pessoas começaram a reagir de forma diferente — sinto que a Palavra está tocando de verdade."</p>
+                </blockquote>
+              </div>
+            </div>
+            <div class="testimonial-group">
+              <h3 class="testimonial-group__label"><i data-lucide="hand-heart"></i> Servos de Deus</h3>
+              <div class="testimonial-cards">
+                <blockquote class="testimonial-card">
+                  <div class="testimonial-card__header">
+                    <div class="avatar">JP</div>
+                    <div>
+                      <strong>Servo João P.</strong>
+                      <span>Rio de Janeiro</span>
+                    </div>
+                    <div class="stars" aria-label="5 estrelas">
+                      <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+                    </div>
+                  </div>
+                  <i data-lucide="quote" class="quote-icon"></i>
+                  <p>"Saí do automático. Hoje tenho um mapa claro de crescimento e sei exatamente qual é o meu próximo passo no ministério."</p>
+                </blockquote>
+                <blockquote class="testimonial-card">
+                  <div class="testimonial-card__header">
+                    <div class="avatar">MC</div>
+                    <div>
+                      <strong>Serva Maria C.</strong>
+                      <span>Bahia</span>
+                    </div>
+                    <div class="stars" aria-label="5 estrelas">
+                      <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+                    </div>
+                  </div>
+                  <i data-lucide="quote" class="quote-icon"></i>
+                  <p>"Sempre quis pregar, mas não sabia por onde começar. O módulo 5 me deu o caminho prático que eu precisava para me preparar."</p>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Dúvidas / FAQ -->
+        <section class="sales-block scroll-reveal" aria-labelledby="faq-heading">
+          <div class="section-header">
+            <span class="section-label"><i data-lucide="help-circle"></i> Dúvidas</span>
+            <h2 class="sales-block__title" id="faq-heading">Tudo o que você precisa saber antes de decidir</h2>
+          </div>
+          <div class="faq-grid">
+            <article class="faq-item">
+              <div class="faq-item__icon"><i data-lucide="package"></i></div>
+              <h3>O que está incluído?</h3>
+              <p>5 módulos completos em vídeo-aula, materiais em PDF, exercícios práticos, checklist de preparação, bônus de comunidade e mentoria em grupo, com acesso vitalício.</p>
+            </article>
+            <article class="faq-item">
+              <div class="faq-item__icon"><i data-lucide="timer"></i></div>
+              <h3>Formato e tempo</h3>
+              <p>Método 100% online, no seu ritmo. Carga horária total de aproximadamente 12 horas. Assista quando e onde quiser, pelo celular ou computador.</p>
+            </article>
+            <article class="faq-item faq-item--wide">
+              <div class="faq-item__icon"><i data-lucide="ban"></i></div>
+              <h3>Para quem NÃO é</h3>
+              <p>Este método não é para quem busca fórmulas mágicas sem prática, nem para quem não está disposto(a) a se dedicar ao crescimento ministerial.</p>
+            </article>
+          </div>
+
+          <div class="support-block">
+            <div class="support-block__header">
+              <div class="support-block__icon"><i data-lucide="life-buoy"></i></div>
+              <h3 class="support-block__title">Você não vai ficar sozinho nessa jornada</h3>
+              <p class="support-block__intro">Ao garantir sua vaga no <strong>Servo Fiel</strong>, você recebe:</p>
+            </div>
+            <div class="support-grid">
+              <div class="support-item">
+                <div class="support-item__icon"><i data-lucide="message-circle"></i></div>
+                <h4>Grupo exclusivo de WhatsApp</h4>
+                <p>Suporte para tirar suas dúvidas diretamente com a equipe e outros alunos.</p>
+              </div>
+              <div class="support-item">
+                <div class="support-item__icon"><i data-lucide="headphones"></i></div>
+                <h4>Suporte 24 horas</h4>
+                <p>Sempre que precisar, alguém vai te responder — sem ficar esperando.</p>
+              </div>
+              <div class="support-item">
+                <div class="support-item__icon"><i data-lucide="shield-check"></i></div>
+                <h4>Garantia de 15 dias</h4>
+                <p>Se o método não for pra você, devolvemos 100% do investimento, sem burocracia.</p>
+              </div>
+            </div>
+            <p class="support-block__closing">
+              <i data-lucide="sparkles"></i>
+              Você está a um passo de destravar sua comunicação, sua direção ou seu primeiro passo no ministério — com todo o suporte necessário para chegar até o fim.
+            </p>
+          </div>
+        </section>
+
+        <!-- Oferta -->
+        <section class="offer scroll-reveal" id="offer" aria-labelledby="offer-heading">
+          <div class="offer__card">
+            <div class="offer__badge"><i data-lucide="crown"></i> Oferta especial</div>
+            <h2 class="offer__title" id="offer-heading">Garanta Agora Seu Acesso ao Servo Fiel</h2>
+            <ul class="offer__includes">
+              <li><i data-lucide="check-circle"></i> 5 módulos completos em vídeo-aula</li>
+              <li><i data-lucide="check-circle"></i> Materiais em PDF + exercícios práticos</li>
+              <li><i data-lucide="check-circle"></i> Bônus: Comunidade + Mentoria em grupo</li>
+              <li><i data-lucide="check-circle"></i> Acesso vitalício ao conteúdo</li>
+              <li><i data-lucide="check-circle"></i> Garantia incondicional de 15 dias</li>
+            </ul>
+            <div class="offer__pricing">
+              <span class="offer__price-old">De R$ 197,00</span>
+              <span class="offer__price">por apenas <strong id="priceValue">R$ 49,90</strong></span>
+              <span class="offer__installments"><i data-lucide="credit-card"></i> ou 12x de R$ 4,99 no cartão</span>
+              <span class="offer__anchor">Menos que um café por dia para transformar sua comunicação no ministério</span>
+            </div>
+            <a href="https://go.frendz.com.br/3hyc4zidd3" target="_blank" rel="noopener noreferrer" class="btn btn--cta btn--lg" id="btnCheckout">
+              <span>Quero Destravar Minha Pregação</span>
+              <i data-lucide="arrow-right"></i>
+            </a>
+            <div class="offer__trust">
+              <span class="trust-badge"><i data-lucide="lock"></i> Pagamento 100% seguro</span>
+              <span class="trust-badge"><i data-lucide="shield-check"></i> Garantia de 15 dias</span>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <footer class="footer">
+        <div class="footer__logo"><i data-lucide="sparkles"></i> Servo Fiel</div>
+        <p>&copy; 2026 Servo Fiel. Todos os direitos reservados.</p>
+      </footer>
+
+    </main>
+  </div>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
