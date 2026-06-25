@@ -366,12 +366,14 @@ const AnimatedCounter = (() => {
 
 const VSLPlayer = (() => {
 
+  const VIDEO_EMBED_URL = 'https://www.youtube.com/embed/PKheeW8KMe0?autoplay=1&rel=0&modestbranding=1';
+
   function init() {
     const placeholder = $('#vslPlaceholder');
-    const video = $('#vslVideo');
+    const iframe = $('#vslVideo');
     const playBtn = $('#vslPlayBtn');
 
-    if (!placeholder || !video || !playBtn) return;
+    if (!placeholder || !iframe || !playBtn) return;
 
     playBtn.addEventListener('click', () => {
       // Fade placeholder out
@@ -380,20 +382,16 @@ const VSLPlayer = (() => {
 
       setTimeout(() => {
         placeholder.style.display = 'none';
-        video.classList.remove('hidden');
+        iframe.src = VIDEO_EMBED_URL;
+        iframe.classList.remove('hidden');
 
-        // Fade video in
-        video.style.opacity = '0';
-        video.style.transition = 'opacity 0.4s ease';
+        // Fade iframe in
+        iframe.style.opacity = '0';
+        iframe.style.transition = 'opacity 0.4s ease';
         requestAnimationFrame(() => {
           requestAnimationFrame(() => {
-            video.style.opacity = '1';
+            iframe.style.opacity = '1';
           });
-        });
-
-        // Start playback
-        video.play().catch(() => {
-          // Autoplay bloqueado pelo browser — o usuário pode clicar nos controles nativos
         });
       }, 400);
     });
