@@ -3581,7 +3581,7 @@ svg.lucide {
 
   /* CTA abaixo da VSL */
   .vsl-cta-below {
-    padding: 0 1rem 1.5rem;
+    padding: 0 1rem 2.5rem;
   }
 
   .vsl-cta-below .btn {
@@ -3589,11 +3589,9 @@ svg.lucide {
     padding: 1rem 1.5rem;
   }
 
-  /* Scroll indicator: fica abaixo do CTA, sem se sobrepor */
+  /* Scroll indicator: oculto no mobile */
   .scroll-indicator {
-    position: static;
-    padding: 0.5rem 0 2rem;
-    animation: float 3s ease-in-out infinite;
+    display: none;
   }
 
   /* Badge hero menor */
