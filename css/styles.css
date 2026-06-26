@@ -3493,3 +3493,157 @@ svg.lucide {
   }
 }
 
+
+/* ==========================================================================
+   42. LOGO IMAGE
+   ========================================================================== */
+
+/* Header logo */
+.logo__img {
+  height: 52px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  /* Inverte preto para branco/dourado no fundo escuro */
+  filter: brightness(0) invert(1);
+  transition: filter var(--transition), transform var(--transition);
+}
+
+.logo__img:hover {
+  filter: brightness(0) invert(1) sepia(1) saturate(2) hue-rotate(5deg);
+  transform: scale(1.03);
+}
+
+/* Ajuste do container logo no header LP */
+.header__inner--lp .logo {
+  margin-bottom: 0;
+  gap: 0;
+}
+
+/* Footer logo */
+.footer__logo-img {
+  height: 56px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  margin: 0 auto 0.5rem;
+  filter: brightness(0) invert(1);
+  opacity: 0.85;
+}
+
+.footer__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* ==========================================================================
+   43. MOBILE RESPONSIVENESS — FULL FIXES
+   ========================================================================== */
+
+/* ── Hero: empilha corretamente no mobile ── */
+@media (max-width: 768px) {
+  .hero {
+    padding: clamp(1.5rem, 5vw, 3rem) 0 0;
+  }
+
+  .hero .container--wide {
+    gap: 2rem;
+    padding-bottom: 0;
+  }
+
+  .hero__title {
+    font-size: clamp(1.7rem, 7vw, 2.4rem);
+    -webkit-text-fill-color: var(--color-text);
+    line-height: 1.2;
+  }
+
+  .hero__sub {
+    font-size: 0.95rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .hero__stats {
+    gap: 0.4rem;
+  }
+
+  .stat-pill {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  /* VSL wrapper: sem padding extra no mobile */
+  .vsl-wrapper {
+    gap: 1rem;
+    padding: 0 0 1rem;
+  }
+
+  /* CTA abaixo da VSL */
+  .vsl-cta-below {
+    padding: 0 1rem 1.5rem;
+  }
+
+  .vsl-cta-below .btn {
+    font-size: 0.95rem;
+    padding: 1rem 1.5rem;
+  }
+
+  /* Scroll indicator: fica abaixo do CTA, sem se sobrepor */
+  .scroll-indicator {
+    position: static;
+    padding: 0.5rem 0 2rem;
+    animation: float 3s ease-in-out infinite;
+  }
+
+  /* Badge hero menor */
+  .badge--hero {
+    font-size: 0.65rem;
+    padding: 0.45rem 0.9rem;
+  }
+
+  /* Logo menor no mobile */
+  .logo__img {
+    height: 40px;
+  }
+
+  /* Header menor */
+  .header__inner--lp {
+    padding: 0.7rem 1rem;
+  }
+}
+
+/* ── Smartphones pequenos (< 420px) ── */
+@media (max-width: 420px) {
+  .hero__title {
+    font-size: 1.55rem;
+  }
+
+  .hero__stats {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vsl-play-btn {
+    width: 64px;
+    height: 64px;
+  }
+
+  .vsl-label {
+    font-size: 0.85rem;
+  }
+
+  .offer__card {
+    padding: 1.5rem 1rem;
+  }
+
+  .offer__title {
+    font-size: 1.3rem;
+  }
+
+  .footer__logo-img {
+    height: 44px;
+  }
+}
+
+
