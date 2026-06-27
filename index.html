@@ -97,34 +97,10 @@
             </div>
           </div>
 
-          <!-- VSL Player -->
+          <!-- VSL Player (vturb) -->
           <div class="vsl-wrapper" id="vsl-player" aria-label="Vídeo de apresentação do método">
             <div class="vsl-inner">
-              <div class="vsl-ratio">
-                <div class="vsl-placeholder" id="vslPlaceholder">
-                  <div class="vsl-placeholder__bg" aria-hidden="true"></div>
-                  <button class="vsl-play-btn" id="vslPlayBtn" aria-label="Assistir ao vídeo de apresentação">
-                    <span class="vsl-play-btn__ring" aria-hidden="true"></span>
-                    <span class="vsl-play-btn__icon" aria-hidden="true">
-                      <i data-lucide="play"></i>
-                    </span>
-                  </button>
-                  <div class="vsl-placeholder__text">
-                    <span class="vsl-label">Assista antes de decidir</span>
-                    <span class="vsl-duration"><i data-lucide="clock"></i> Apresentação em vídeo</span>
-                  </div>
-                </div>
-                <!-- Vídeo YouTube -->
-                <iframe
-                  id="vslVideo"
-                  class="vsl-iframe hidden"
-                  src=""
-                  title="Vídeo de apresentação — Servo Fiel"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
-              </div>
+              <vturb-smartplayer id="vid-6a3f1f542a950a2cf945d657" style="display: block; margin: 0 auto; width: 100%;"><div class="vturb-player-placeholder" style="position: relative; width: 100%; padding: 48.75% 0 0; z-index: 0; background-color: black;"></div></vturb-smartplayer>
             </div>
             <div class="vsl-cta-below">
               <a href="https://go.frendz.com.br/3hyc4zidd3" target="_blank" rel="noopener noreferrer" class="btn btn--cta btn--lg" id="hero-cta-btn">
@@ -415,6 +391,13 @@
     </main>
   </div>
 
+  <!-- vturb Player Script -->
+  <script type="text/javascript">
+    var s = document.createElement("script");
+    s.src = "https://scripts.converteai.net/c995910a-f142-4345-95cf-c829ed7160bd/players/6a3f1f542a950a2cf945d657/v4/player.js";
+    s.async = !0;
+    document.head.appendChild(s);
+  </script>
   <script src="https://unpkg.com/lucide@latest"></script>
   <script src="js/app.js"></script>
 </body>
